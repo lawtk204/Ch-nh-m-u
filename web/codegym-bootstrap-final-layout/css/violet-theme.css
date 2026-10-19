@@ -1,0 +1,29 @@
+﻿:root {
+    --brand: #7041C7;
+    --brand-2: #825BD0;
+    --brand-4: #9B7BDD;
+    --brand-7: #D4C6F0;
+    --brand-9: #EAE3F8;
+    --ink: #000000;
+    --muted: #554F60;
+    --paper: #ffffff;
+}
+body { color: var(--ink); }
+.navbar, .hero-app { background-color: var(--brand-4); }
+.navbar-nav .nav-item .nav-link { color: var(--paper); }
+.hero-app-content, .download-content h1, .download-content h4,
+.download-content p { color: var(--paper); }
+.features { background-color: var(--brand-7); color: var(--ink); }
+.feature-content h5, .section-title { color: var(--ink); }
+.feature-content p, .welcome-area p { color: var(--muted); }
+.download-area::before, .subscribe-area::before { background-color: rgba(112, 65, 199, .92); }
+.pricing-area { background-color: var(--paper); color: var(--ink); }
+.pricing-area .card { border-color: var(--brand-9); }
+.pricing-area .card-header { background-color: var(--brand-9); color: var(--ink); }
+.pricing-area .btn-primary { background-color: var(--brand); border-color: var(--brand); }
+.btn-subscribe { background-color: var(--brand-2); color: var(--ink); }
+.promo-badge { position: absolute; z-index: 2; top: 24px; left: max(24px, calc((100% - 1140px) / 2)); padding: 9px 16px; border-radius: 4px; background: var(--brand); color: var(--paper); font-weight: 700; letter-spacing: .08em; }
+.preview-badge { left: auto; right: max(24px, calc((100% - 1140px) / 2)); background: var(--brand-2); }
+.download-area, .subscribe-area { position: relative; }
+.site-footer { padding: 26px 0; background-color: var(--brand-9); color: var(--ink); text-align: center; }
+@media (max-width: 767px) { .promo-badge { top: 12px; left: 16px; } .preview-badge { left: auto; right: 16px; } }
